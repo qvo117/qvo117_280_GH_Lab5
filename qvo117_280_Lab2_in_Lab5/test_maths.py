@@ -34,6 +34,11 @@ class MathsTest(unittest.TestCase):
     def test_convert_base_over_10(self):
         actual = maths.convert_base(10, 16)
         self.assertEqual(actual, 'A')
+        
+    def test_factorial(self):
+        ''' Tests the factorial function. '''
+        actual = maths.factorial(3)
+        self.assertEqual(actual, 6)
 
 
 # This allows running the unit tests from the command line (python test_maths.py)
